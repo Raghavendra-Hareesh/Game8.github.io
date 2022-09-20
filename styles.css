@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@633&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@633&family=Titillium+Web:wght@300&display=swap');
+
+body {
+    background: url('assets/bg.jpg');
+    padding: 1em;
+}
+
+*{
+    margin-top: 0.47em;
+    margin-bottom: 0.7em;
+    max-width: 100%;
+}
+
+.TitleLogo{
+    font-family: "Exo 2";
+    font-size: max(3vw,35px);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a, button {
+    font-family: "Concert One";
+    color: white;
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 8vw;
+}
+
+.nav_links button{
+    font-size: max(1.2vw,16px);  
+    padding: 0.2vw 2vw;
+    background-color: transparent;
+    border: none;
+}
+
+.nav_links :hover{
+    background-color:  #7BA435;
+    border-radius: 0.3em;
+}
+
+.nav_links :hover a{
+    color: #000F2E;
+}
+
+#cart{
+    height: max(2.5vw,30px);
+    vertical-align: top;
+    cursor: pointer;
+}
+
+#join{
+    font-size: 1vw;
+    background-color: #7BA435;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+#join:hover{
+    color: #011634;
+}
+
+.menu{
+    display: none;
+}
+
+.warzone{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 8vw;
+}
+
+.warzone_text{
+    padding-top: 10vh;
+}
+
+p{
+    font-family: "Concert One";
+    color: #7BA435;
+}
+
+.warzone_img{
+    height: auto;
+    width: max(400px,30vw);
+}
+
+#star{
+    color: white;
+}
+
+.warzone_text_title{
+    font-size: 4rem;
+    color: white;
+    font-family: "Exo 2";
+    margin-bottom: 0;
+}
+
+.warzone_text_description{
+    margin-top: 0.4em;
+    width: 70%;
+    font-size: 1.2rem;
+    color: white;
+    font-family: "Titillium Web";
+}
+
+.play{
+    display: flex;
+}
+
+.play_now{
+    background-color: #7BA435;
+    color: white;
+    padding: 0px 25px;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.play #play_now:hover {
+    color: #011634;
+}
+
+.play #play_btn{
+    cursor: pointer;
+    height: 50px;
+    width:50px;
+}
+
+.vid_sec{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #000F2E;
+    padding: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+.vid{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.girl{
+    height: 293px;
+    position: relative;
+}
+/*
+.play2{
+    top: 828px;
+    position: absolute;
+    height: 80px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+.watch_live{
+    top: 969px;
+    position: absolute;
+    height: 96px;
+    cursor: pointer;
+}
+.play2:hover{
+    opacity: 1;
+} */
+
+.med{
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+    font-family: "Exo 2";
+}
+
+.play_now_{
+    background-color: #7BA435;
+    color: white;
+    padding: 15px 30px;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.up_mat{
+    margin: 0;
+    background-color: #011634;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.cen{
+    text-align: center;
+}
+
+.up_mat{
+    display: grid;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1em;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    /* padding-right: 100px; */
+}
+
+.cards1{
+    display: flex;
+    gap: 1em;
+}
+
+.cards2{
+    display: flex;
+    gap: 1em;
+    max-width: 47.5em;
+}
+
+.card_{
+    padding-left: 0;
+    display: grid;
+}
+
+.match{
+    display: flex;
+    justify-content: space-evenly;
+    border: 0.5px gray;
+    border-style: double;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0;
+    padding: 7px 0px 35px 0px;
+}
+
+.liv1{
+    background-color: #011630;
+    position: absolute;
+    top: 1380px;
+    margin: 0;
+    display: flex;
+    border: 0.5px gray;
+    border-style: double;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 0px 25px;
+    align-items: center;
+    left: 267px;
+    cursor: pointer;
+}
+
+.liv2{
+    background-color: #011630;
+    position: absolute;
+    top: 1380px;
+    margin: 0;
+    display: flex;
+    border: 0.5px gray;
+    border-style: double;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 0px 25px;
+    align-items: center;
+    left: 647px;
+    cursor: pointer;
+}
+
+.liv3{
+    background-color: #011630;
+    position: absolute;
+    top: 1380px;
+    margin: 0;
+    display: flex;
+    border: 0.5px gray;
+    border-style: double;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 0px 25px;
+    align-items: center;
+    left: 1067px;
+    cursor: pointer;
+}
+
+
+.liv4{
+    background-color: #011630;
+    position: absolute;
+    top: 1788px;
+    margin: 0;
+    display: flex;
+    border: 0.5px gray;
+    border-style: double;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 0px 25px;
+    align-items: center;
+    left: 254px;
+    cursor: pointer;
+}
+
+.liv5{
+    background-color: #011630;
+    position: absolute;
+    top: 1788px;
+    margin: 0;
+    display: flex;
+    border: 0.5px gray;
+    border-style: double;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 0px 25px;
+    align-items: center;
+    left: 673px;
+    cursor: pointer;
+}
+
+.match_2{
+    border: 0.5px gray;
+    border-style: double;
+    border-radius: 0px 0px 5px 5px;
+    margin: 0;
+    justify-content: center;
+    padding: 50px 30px 40px 30px;
+}
+
+.liv img{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 6px 11px;
+}
+
+.stats{
+    background-color: #000F2E;
+    padding: 70px;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.stats_inner{
+    border: 1px white;
+    border-radius: 10px;
+    border-style: double;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.num{
+    color: white;
+    font-family: "Exo 2";
+    font-size: 50px;
+}
+
+.num_txt{
+    color: white;
+    background-color: #7BA435;
+    font-family: "Exo 2";
+    font-size: 10px;
+    padding: 3px 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bottom{
+    background: url('images/bg2.jpg');
+    background-size: auto;
+    margin: 0;
+    padding-top: 40px;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.subs
+{
+    justify-content: space-around;
+    display: flex;
+    background-color: #7BA435;
+    border-radius: 15px;
+    padding: 10px 0px;
+    width: 80%;
+}
+
+.subs_news{
+    font-family: "Exo 2";
+    font-size: min(30px,2.5vw);
+    color: white;
+}
+
+.subs_txt{
+    font-family: "Titillium Web";
+    color: white;
+    font-size: 15px;
+}
+
+#subs_btn{
+    padding: 12px;
+    margin: 0;
+    background-color: #011634;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input{
+    padding: 12px;
+    margin: 0;
+    width:320px;
+    border: none;
+    border-radius: 5px;
+}
+
+.end{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons img{
+    height: 30px;
+}
+
+.green{
+    font-family: "Titillium Web";
+    color: #7BA435;
+    font-size: 13px;
+}
+
+.grid_{
+    margin: 0;
+    display: inline-block;
+}
+
+@media screen and (max-width:1200px){
+    .warzone{
+        display: block;
+    }
+
+    .warzone_text{
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .warzone_text_title{
+        text-align: center;
+        font-size: max(5vw,3rem);
+        margin: 0;
+    }
+
+    .warzone_text_description{
+        margin: 0.5em;
+        width: unset;
+        font-size: max(1.5vw,1rem);
+    }
+
+    .warzone_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 50%; */
+
+    }
+
+    .nav_links{
+        line-height: 2.5rem;
+    }
+    
+    .play{
+        justify-content: center;
+    }
+
+    .vid_sec{
+        display: block;
+        justify-content: space-evenly;
+        background-color: #000F2E;
+        padding: 30px;
+        margin: 0;
+    }
+    
+    .vid{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .girl{
+        height: 293px;
+        position: relative;
+    }
+    
+    .play2{
+        top :1090px;
+        position: absolute;
+        height: 80px;
+        opacity: 0.75;
+        cursor: pointer;
+    }
+    .watch_live{
+        top: 1225px;
+        position: absolute;
+        height: 96px;
+        cursor: pointer;
+    }    
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    /* .cards2{
+        display: block;
+    } */
+
+    .num{
+        font-size: min(50px,4vw);
+    }
+
+    .num_txt{
+        font-size: min(10px,1vw);
+    }
+    .stat{
+        text-align: center;
+    }
+
+    .stats_inner{
+        width: 90%;
+    }
+
+    .liv1{
+        display: none;
+    }
+    .liv2{
+        display: none;
+    }
+    .liv3{
+        display: none;
+    }
+    .liv4{
+        display: none;
+    }
+    .liv5{
+        display: none;
+    }
+
+    .subs_news{
+        font-size: min(20px,2.5vw);
+    }
+
+    .subs_txt{
+        font-size: min(12px,1.5vw);
+    }
+
+    input{
+        width: 22vw;
+    }        
+
+    .end{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:880px){
+    .header{
+        margin: 0 5vw;
+    }
+
+    .menu{
+        display: unset;
+        width: 1.5em;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+
+    #cart, #join{
+        display: none;
+    }
+
+    .nav_links button{
+        display: none;
+    }
+
+    .end{
+        display: block;
+        justify-content: space-around;
+    }
+    .stats_inner{
+        display: block;
+    }
+
+    .stat{
+        margin: 1em;
+    }
+
+    .num{
+        font-size: 40px;
+    }
+    
+    .num_txt{
+        font-size: 10px;
+    }
+
+    .cards{
+        display: block;
+    }
+
+    .subs{
+        display: block;
+        text-align: center;
+    }
+    
+    .subs_news{
+        font-size: 22px;
+    }
+
+    .subs_txt{
+        font-size: 12px;
+    }
+
+    .end{
+        padding: 5em;
+    }
+
+    .icons{
+        justify-content: space-evenly; 
+        padding: 0 1em;
+    }
+}
